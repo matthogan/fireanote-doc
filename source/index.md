@@ -12,7 +12,7 @@ Having said that there are some bells-n-whistles if you so wish, such as increas
 
 ## Contents
 
-- [Quick Start](_static/quickstart.md)
+- [Quick Start](_static/quickstart.html)
 
 ## Credits
 
