@@ -15,6 +15,16 @@ Having said that there are some bells-n-whistles if you so wish, such as increas
 ## Contents
 
 - [Quick Start](_static/quickstart.html)
+- What is Fireanote?
+- Joining Fireanote
+- Account Management
+- Using Fireanote
+- Frequently Asked Questions
+- Privacy and Data
+  - [Privacy Policy](_static/privacy/privacy.html)
+  - Managing your data
+- [Copyright](_static/copyright.html)
+- [Disclaimer](_static/disclaimer.html)
 
 ## Credits
 
