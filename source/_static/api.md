@@ -24,11 +24,13 @@ POST
 
 #### Headers
 
+<!--table-->
 | Header  | Value |
 | ------------- | ------------- |
 | content-type  | application/json, application/json; charset=utf8 |
 | accept | application/json, application/json; charset=utf8 |
 | authorization* | CJ Y2xpZ.....PXRva2VuCg== |
+<!--endtable-->
 
 #### Authorization
 
@@ -39,12 +41,15 @@ API calls are authorized using the HTTP authorization header, which contains a c
 \<auth-scheme>\<space>\<auth-param>
 
 Fields:-
+<!--table-->
 | Field  | Description | Value |
 | ------------- | --- | ---------- |
 | auth-scheme | literally CJ | CJ |
 | auth-param | Encoded api keys | Base64 encoded list of key pairs |
+<!--endtable-->
 
 Key pairs:-
+<!--table-->
 | Key  | Description | Format |
 | ------------- | ------------- | --- |
 | client-id  | The app's group API key and the app's API key | \<group-api-key>:\<app-api-key> |
@@ -52,6 +57,7 @@ Key pairs:-
 | response_type | token (literally) | token |
 | scope | Field is unused and reserved | |
 | state | Field is unused and reserved | |
+<!--endtable-->
 
 ##### Example
 
@@ -82,6 +88,7 @@ The payload is valid JSON with a simplistic and customizable format. The power o
 
 #### Fields
 
+<!--table-->
 | Field          | Type   | Max Length | Description                                                  |
 | -------------- | ------ | ---------- | ------------------------------------------------------------ |
 | notificationId | string | 100        | Your unique identifier. The system will not enforce uniqueness. Think of it as a message identifier or a correlation id. |
@@ -90,6 +97,7 @@ The payload is valid JSON with a simplistic and customizable format. The power o
 | category       | string | 100        | A generic category classifier, for instance a business level category such as MEDICAL, or a severity index such as DEFCON. |
 | priority       | string | 100        | Your priority assignment for this notification.              |
 | body           | string | 4000       | Content of the message, such as an error message, or any text including user messages and so on. |
+<!--endtable-->
 
 ### Response
 
@@ -98,8 +106,9 @@ HTTP Status
 201 Created
 
 Headers
-
+<!--table-->
 | Header  | Description | Format |
 | ------- | ------------- | --- |
 | location  | Path to the created notification | /api/v0.1/user/web/notification/<notificationId> |
+<!--endtable-->
 
