@@ -106,9 +106,15 @@ HTTP Status
 201 Created
 
 Headers
-<!--table-->
-| Header  | Description | Format |
-| ------- | ------------- | --- |
-| location  | Path to the created notification | /api/v0.1/user/web/notification/<notificationId> |
-<!--endtable-->
+```eval_rst
+.. list-table::
+   :widths: 33 33 33
+   :header-rows: 1
 
+   * - Header
+     - Description
+     - Format
+   * - location
+     - Path to the created notification
+     - /api/v0.1/user/web/notification/<notificationId>
+```
