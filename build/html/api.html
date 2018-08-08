@@ -30,7 +30,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="copyright" title="Copyright" href="copyright.html" />
-    <link rel="next" title="Privacy Notice" href="privacy.html" />
+    <link rel="next" title="Frequently Asked Questions" href="faq.html" />
     <link rel="prev" title="Quick Start" href="quickstart.html" /> 
 
   
@@ -85,18 +85,20 @@
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">API</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#endpoint">Endpoint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#authorization">Authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#schema">Schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example">Example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#send-notification">Send notification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#uri">URI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#request">Request</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#http-verb">HTTP verb</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#headers">Headers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#schema">Schema</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#example">Example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#body">Body</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#fields">Fields</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#response">Response</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Notice</a></li>
 <li class="toctree-l1"><a class="reference internal" href="copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="disclaimer.html">Disclaimer</a></li>
@@ -175,48 +177,9 @@
 <p><a class="reference external" href="https://api.firenote.com/api/v0.1/">https://api.firenote.com/api/v0.1/</a></p>
 <p>All calls are invoked over SSL. HTTP calls will be redirected to HTTPS
 using a 302 response status.</p>
-<p>The following calls are supported.</p>
 </div>
-<div class="section" id="send-notification">
-<h2>Send notification<a class="headerlink" href="#send-notification" title="Permalink to this headline">¶</a></h2>
-<p>Notify that an event has occurred.</p>
-</div>
-<div class="section" id="uri">
-<h2>URI<a class="headerlink" href="#uri" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://api.fireanote.com/api/v0.1/notification">https://api.fireanote.com/api/v0.1/notification</a></p>
-</div>
-<div class="section" id="request">
-<h2>Request<a class="headerlink" href="#request" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="http-verb">
-<h2>HTTP verb<a class="headerlink" href="#http-verb" title="Permalink to this headline">¶</a></h2>
-<p>POST</p>
-</div>
-<div class="section" id="headers">
-<h2>Headers<a class="headerlink" href="#headers" title="Permalink to this headline">¶</a></h2>
-<table border="1" class="docutils">
-<colgroup>
-<col width="26%" />
-<col width="74%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Header</th>
-<th class="head">Value</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>content-type</td>
-<td>application/json, application/json; charset=utf8</td>
-</tr>
-<tr class="row-odd"><td>accept</td>
-<td>application/json, application/json; charset=utf8</td>
-</tr>
-<tr class="row-even"><td>authorization*</td>
-<td>CJ Y2xpZ…..PXRva2VuCg==</td>
-</tr>
-</tbody>
-</table>
-<p>*Authorization</p>
+<div class="section" id="authorization">
+<span id="api-authorization"></span><h2>Authorization<a class="headerlink" href="#authorization" title="Permalink to this headline">¶</a></h2>
 <p>API calls are authorized using the HTTP authorization header, which contains a comma delimited list of key pairs containing the api keys required to match the notification with the app and its group.</p>
 </div>
 <div class="section" id="schema">
@@ -293,6 +256,46 @@ using a 302 response status.</p>
 <p><code class="docutils literal notranslate"><span class="pre">`</span>
 <span class="pre">CJ</span> <span class="pre">Y2xpZW50LWlkPTEyOTkyMzU2MWJiZDA4Njk6NTY1ZmNhYzQzYTNmMmI4MCxyZXNwb25zZV90eXBlPXRva2VuCg==</span>
 <span class="pre">`</span></code></p>
+</div>
+<div class="section" id="send-notification">
+<span id="api-send-notification"></span><h2>Send notification<a class="headerlink" href="#send-notification" title="Permalink to this headline">¶</a></h2>
+<p>Notify that an event has occurred.</p>
+</div>
+<div class="section" id="uri">
+<h2>URI<a class="headerlink" href="#uri" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://api.fireanote.com/api/v0.1/notification">https://api.fireanote.com/api/v0.1/notification</a></p>
+</div>
+<div class="section" id="request">
+<h2>Request<a class="headerlink" href="#request" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="http-verb">
+<h2>HTTP verb<a class="headerlink" href="#http-verb" title="Permalink to this headline">¶</a></h2>
+<p>POST</p>
+</div>
+<div class="section" id="headers">
+<h2>Headers<a class="headerlink" href="#headers" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="74%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Header</th>
+<th class="head">Value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>content-type</td>
+<td>application/json, application/json; charset=utf8</td>
+</tr>
+<tr class="row-odd"><td>accept</td>
+<td>application/json, application/json; charset=utf8</td>
+</tr>
+<tr class="row-even"><td>authorization*</td>
+<td>CJ Y2xpZ…..PXRva2VuCg==</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="body">
 <h2>Body<a class="headerlink" href="#body" title="Permalink to this headline">¶</a></h2>
@@ -394,7 +397,7 @@ using a 302 response status.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="privacy.html" class="btn btn-neutral float-right" title="Privacy Notice" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="faq.html" class="btn btn-neutral float-right" title="Frequently Asked Questions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="quickstart.html" class="btn btn-neutral" title="Quick Start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

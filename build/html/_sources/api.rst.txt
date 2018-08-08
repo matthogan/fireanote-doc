@@ -9,40 +9,10 @@ https://api.firenote.com/api/v0.1/
 All calls are invoked over SSL. HTTP calls will be redirected to HTTPS 
 using a 302 response status.
 
-The following calls are supported.
+.. _api-authorization:
 
-Send notification
------------------
-
-Notify that an event has occurred.
-
-URI
----
-
-https://api.fireanote.com/api/v0.1/notification
-
-Request
--------
-
-HTTP verb
----------
-
-POST
-
-Headers
--------
-
-+-------------------+------------------------------------------------------+
-| Header            | Value                                                |  
-+===================+======================================================+
-| content-type      | application/json, application/json; charset=utf8     |
-+-------------------+------------------------------------------------------+
-| accept            | application/json, application/json; charset=utf8     |
-+-------------------+------------------------------------------------------+
-| authorization*    | CJ Y2xpZ.....PXRva2VuCg==                            |
-+-------------------+------------------------------------------------------+
-
-\*Authorization
+Authorization
+-------------
 
 API calls are authorized using the HTTP authorization header, which contains a comma delimited list of key pairs containing the api keys required to match the notification with the app and its group.
 
@@ -91,6 +61,39 @@ And encoded as:-
 ```
 CJ Y2xpZW50LWlkPTEyOTkyMzU2MWJiZDA4Njk6NTY1ZmNhYzQzYTNmMmI4MCxyZXNwb25zZV90eXBlPXRva2VuCg==
 ```
+
+.. _api-send-notification:
+
+Send notification
+-----------------
+
+Notify that an event has occurred.
+
+URI
+---
+
+https://api.fireanote.com/api/v0.1/notification
+
+Request
+-------
+
+HTTP verb
+---------
+
+POST
+
+Headers
+-------
+
++-------------------+------------------------------------------------------+
+| Header            | Value                                                |  
++===================+======================================================+
+| content-type      | application/json, application/json; charset=utf8     |
++-------------------+------------------------------------------------------+
+| accept            | application/json, application/json; charset=utf8     |
++-------------------+------------------------------------------------------+
+| authorization*    | CJ Y2xpZ.....PXRva2VuCg==                            |
++-------------------+------------------------------------------------------+
 
 Body
 ----

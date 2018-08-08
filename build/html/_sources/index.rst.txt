@@ -29,6 +29,7 @@ increased capacity, or sentiment analysis.
 
    quickstart
    api
+   faq
    privacy
    copyright
    disclaimer
