@@ -1,0 +1,457 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API &mdash; Fireanote 1.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="next" title="Privacy Notice" href="privacy.html" />
+    <link rel="prev" title="Quick Start" href="quickstart.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Fireanote
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#endpoint">Endpoint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#send-notification">Send notification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uri">URI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#request">Request</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#http-verb">HTTP verb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#headers">Headers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#schema">Schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#body">Body</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fields">Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#response">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Notice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="disclaimer.html">Disclaimer</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Credits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="humans.html">Humans</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Fireanote</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api">
+<h1>API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="endpoint">
+<h2>Endpoint<a class="headerlink" href="#endpoint" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://api.firenote.com/api/v0.1/">https://api.firenote.com/api/v0.1/</a></p>
+<p>All calls are invoked over SSL. HTTP calls will be redirected to HTTPS
+using a 302 response status.</p>
+<p>The following calls are supported.</p>
+</div>
+<div class="section" id="send-notification">
+<h2>Send notification<a class="headerlink" href="#send-notification" title="Permalink to this headline">¶</a></h2>
+<p>Notify that an event has occurred.</p>
+</div>
+<div class="section" id="uri">
+<h2>URI<a class="headerlink" href="#uri" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://api.fireanote.com/api/v0.1/notification">https://api.fireanote.com/api/v0.1/notification</a></p>
+</div>
+<div class="section" id="request">
+<h2>Request<a class="headerlink" href="#request" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="http-verb">
+<h2>HTTP verb<a class="headerlink" href="#http-verb" title="Permalink to this headline">¶</a></h2>
+<p>POST</p>
+</div>
+<div class="section" id="headers">
+<h2>Headers<a class="headerlink" href="#headers" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="74%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Header</th>
+<th class="head">Value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>content-type</td>
+<td>application/json, application/json; charset=utf8</td>
+</tr>
+<tr class="row-odd"><td>accept</td>
+<td>application/json, application/json; charset=utf8</td>
+</tr>
+<tr class="row-even"><td>authorization*</td>
+<td>CJ Y2xpZ…..PXRva2VuCg==</td>
+</tr>
+</tbody>
+</table>
+<p>*Authorization</p>
+<p>API calls are authorized using the HTTP authorization header, which contains a comma delimited list of key pairs containing the api keys required to match the notification with the app and its group.</p>
+</div>
+<div class="section" id="schema">
+<h2>Schema<a class="headerlink" href="#schema" title="Permalink to this headline">¶</a></h2>
+<p>&lt;auth-scheme&gt;&lt;space&gt;&lt;auth-param&gt;</p>
+<p>Fields:-</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="28%" />
+<col width="49%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+<th class="head">Values</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>auth-scheme</td>
+<td>literally CJ</td>
+<td>CJ</td>
+</tr>
+<tr class="row-odd"><td>auth-param</td>
+<td>Encoded api keys</td>
+<td>Base64 encoded list of key pairs</td>
+</tr>
+</tbody>
+</table>
+<p>Key pairs:-</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="49%" />
+<col width="35%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Description</th>
+<th class="head">Format</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>client-id</td>
+<td>The app’s group API key and the app’s API key</td>
+<td>&lt;group-api-key&gt;:&lt;app-api-key&gt;</td>
+</tr>
+<tr class="row-odd"><td>redirect_uri</td>
+<td>Field is unused and reserved</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>response_type</td>
+<td>token (literally)</td>
+<td>token</td>
+</tr>
+<tr class="row-odd"><td>scope</td>
+<td>Field is unused and reserved</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>state</td>
+<td>Field is unused and reserved</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p>The group and app api keys are appended and separated by a colon:-</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">CJ</span> <span class="pre">client-id=129923561bbd0869:565fcac43a3f2b80,response_type=token</span>
+<span class="pre">`</span></code></p>
+<p>And encoded as:-</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">CJ</span> <span class="pre">Y2xpZW50LWlkPTEyOTkyMzU2MWJiZDA4Njk6NTY1ZmNhYzQzYTNmMmI4MCxyZXNwb25zZV90eXBlPXRva2VuCg==</span>
+<span class="pre">`</span></code></p>
+</div>
+<div class="section" id="body">
+<h2>Body<a class="headerlink" href="#body" title="Permalink to this headline">¶</a></h2>
+<p>The payload is valid JSON with a simplistic and customizable format. The power of the generic fields relies on your own definition of their values, for instance the categories should be driven by the app definition, not by the message handler.</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;notificationId&quot;</span> <span class="p">:</span> <span class="s2">&quot;KTfn89CvlLqJ1FTQDLm1&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;description&quot;</span> <span class="p">:</span> <span class="s2">&quot;An error happened in the system&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;dataType&quot;</span> <span class="p">:</span> <span class="s2">&quot;text/plain&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;category&quot;</span> <span class="p">:</span> <span class="s2">&quot;DEFCON3&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;priority&quot;</span> <span class="p">:</span> <span class="s2">&quot;SEVERE&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;body&quot;</span> <span class="p">:</span> <span class="s2">&quot;Was it something I said? Something I didn&#39;t do?&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="5%" />
+<col width="8%" />
+<col width="78%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Type</th>
+<th class="head">Max Length</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>notificationId</td>
+<td>string</td>
+<td>100</td>
+<td>Your unique identifier. The system will not enforce uniqueness. Think of it as a message identifier or a correlation id.</td>
+</tr>
+<tr class="row-odd"><td>description</td>
+<td>string</td>
+<td>100</td>
+<td>Describe the message.</td>
+</tr>
+<tr class="row-even"><td>dataType</td>
+<td>string</td>
+<td>100</td>
+<td>Your data type identifier. Recommendation:- mime-types</td>
+</tr>
+<tr class="row-odd"><td>category</td>
+<td>string</td>
+<td>100</td>
+<td>A generic category classifier, for instance a business level category such as MEDICAL, or a severity index such as DEFCON.</td>
+</tr>
+<tr class="row-even"><td>priority</td>
+<td>string</td>
+<td>100</td>
+<td>Your priority assignment for this notification.</td>
+</tr>
+<tr class="row-odd"><td>body</td>
+<td>string</td>
+<td>4000</td>
+<td>Content of the message, such as an error message, or any text including user messages and so on.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="response">
+<h2>Response<a class="headerlink" href="#response" title="Permalink to this headline">¶</a></h2>
+<p>HTTP Status</p>
+<p>201 Created</p>
+<p>Headers</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="35%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Header</th>
+<th class="head">Description</th>
+<th class="head">Format</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>location</td>
+<td>Path to the created notification</td>
+<td>/api/v0.1/user/web/notification/&lt;notificationId&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="privacy.html" class="btn btn-neutral float-right" title="Privacy Notice" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="quickstart.html" class="btn btn-neutral" title="Quick Start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; <a href="copyright.html">Copyright</a> 2018, Matthew Hogan.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.1',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

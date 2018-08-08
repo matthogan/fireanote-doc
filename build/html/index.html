@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Fireanote &mdash; Fireanote 1.0.1 documentation</title>
+  <title>Welcome to Fireanote &mdash; Fireanote 1.0.1 documentation</title>
   
 
   
@@ -29,7 +29,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Quick Start" href="_static/quickstart.html" /> 
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="next" title="Quick Start" href="quickstart.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -78,8 +79,17 @@
               
             
             
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="_static/quickstart.html">Quick Start</a></li>
+              <p class="caption"><span class="caption-text">Table of contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Notice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="disclaimer.html">Disclaimer</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Credits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="humans.html">Humans</a></li>
 </ul>
 
             
@@ -125,7 +135,7 @@
     
       <li><a href="#">Docs</a> &raquo;</li>
         
-      <li>Fireanote</li>
+      <li>Welcome to Fireanote</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -144,29 +154,73 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="fireanote">
-<h1>Fireanote<a class="headerlink" href="#fireanote" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://www.fireanote.com">Fireanote</a> is a simple notification system for your apps. Integration is a snap
-with a single call to a URI. Receive notifications in your email inbox.</p>
-<a class="reference internal image-reference" href="_images/welcome.png"><img alt="Welcome to fireanote screen shot" src="_images/welcome.png" style="width: 400px;" /></a>
-<p>All notifications are destroyed and nothing is stored.</p>
-<p>That’s all it is:- a simple to use notification system.</p>
-<p>Having said that there are some bells-n-whistles if you so wish, such as increased
-capacity, or sentiment analysis.</p>
-</div>
-<div class="section" id="contents">
-<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="welcome-to-fireanote">
+<h1>Welcome to Fireanote<a class="headerlink" href="#welcome-to-fireanote" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://www.fireanote.com">Fireanote</a> is a simple notification system
+for your apps. Integration is a snap with a single call to a single URI.</p>
+<p>Let’s imagine you have an Android app and it encountered an unknown
+scenario and threw an exception. For many this error never leaves the
+app instance on that phone and the only thing that leaves is the
+customer, perhaps with unfairly negative feedback imprinted forever
+on the app store.</p>
+<p><a class="reference external" href="https://www.fireanote.com">Fireanote</a> will allow you to wrap those errors up as messages and
+receive them as emails so you can respond in a timely and supernaturally
+preemptive fashion.</p>
+<a class="reference internal image-reference" href="_images/welcome.png"><img alt="The fireanote website" src="_images/welcome.png" style="width: 600px;" /></a>
+<p>All notifications are destroyed after a short period and nothing is stored.</p>
+<p>Having said that there are some bells-n-whistles if you so wish, such as
+increased capacity, or sentiment analysis.</p>
 <div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Table of contents</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="_static/quickstart.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#what-you-need-to-know">What you need to know</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#create-a-free-account">1 - Create a free account.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#create-a-new-group-of-apps">2 - Create a new group of apps.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#add-a-new-app">3 - Add a new app.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#fire-a-note-from-the-test-harness">4. Fire a note from the test harness.</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api.html#endpoint">Endpoint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#send-notification">Send notification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#uri">URI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#request">Request</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#http-verb">HTTP verb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#headers">Headers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#schema">Schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#body">Body</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#fields">Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#response">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Notice</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="privacy.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="privacy.html#data-protection">Data Protection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="privacy.html#what-information-do-we-collect">What information do we collect?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="privacy.html#user-profiles">User profiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="privacy.html#marketing">Marketing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="privacy.html#when-we-may-share-your-data">When we may share your data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="privacy.html#transfer-of-your-personal-data-to-other-countries">Transfer of your personal data to other countries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="privacy.html#the-security-of-your-personal-data">The security of your personal data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="privacy.html#our-storage-and-retention-of-your-personal-data">Our storage and retention of your personal data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="privacy.html#your-rights-as-a-data-subject">Your rights as a data subject</a></li>
+<li class="toctree-l2"><a class="reference internal" href="privacy.html#no-fee-usually-required">No fee usually required</a></li>
+<li class="toctree-l2"><a class="reference internal" href="privacy.html#what-we-may-need-from-you">What we may need from you</a></li>
+<li class="toctree-l2"><a class="reference internal" href="privacy.html#your-right-to-withdraw-consent">Your right to withdraw consent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="privacy.html#changes-to-this-privacy-notice">Changes to this Privacy Notice</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="disclaimer.html">Disclaimer</a></li>
 </ul>
 </div>
-</div>
-<div class="section" id="credits">
-<h2>Credits<a class="headerlink" href="#credits" title="Permalink to this headline">¶</a></h2>
-<p>Humans <a class="reference external" href="humans.txt">humans</a></p>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Credits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="humans.html">Humans</a></li>
+</ul>
 </div>
 </div>
 
@@ -178,7 +232,7 @@ capacity, or sentiment analysis.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="_static/quickstart.html" class="btn btn-neutral float-right" title="Quick Start" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="quickstart.html" class="btn btn-neutral float-right" title="Quick Start" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>
@@ -188,7 +242,7 @@ capacity, or sentiment analysis.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, Matthew Hogan.
+        &copy; <a href="copyright.html">Copyright</a> 2018, Matthew Hogan.
 
     </p>
   </div>
