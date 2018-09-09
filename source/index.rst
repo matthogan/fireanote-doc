@@ -32,8 +32,16 @@ increased capacity, or sentiment analysis.
    how-to
    signup
    user-profile
-   create-entity
    invitations
+   entity-users
+   create-entity
+   widgets
+   configure-entity
+   your-apps
+   add-app
+   test-harness
+   console
+   plans
    faq
    privacy
    copyright
