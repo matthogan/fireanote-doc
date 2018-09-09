@@ -29,6 +29,11 @@ increased capacity, or sentiment analysis.
 
    quickstart
    api
+   how-to
+   signup
+   user-profile
+   create-entity
+   invitations
    faq
    privacy
    copyright
