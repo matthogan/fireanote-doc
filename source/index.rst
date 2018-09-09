@@ -33,8 +33,9 @@ increased capacity, or sentiment analysis.
    signup
    user-profile
    invitation
-   entity-users
    create-entity
+   entity-users
+   invitations
    widgets
    configure-entity
    your-apps

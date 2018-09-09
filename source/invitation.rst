@@ -1,7 +1,7 @@
 .. _invitation:
 
-Invitations
-===========
+Your Invitations
+================
 
 .. image:: _static/images/fn-dashboard-invites.png
   :width: 600
