@@ -32,7 +32,7 @@ increased capacity, or sentiment analysis.
    how-to
    signup
    user-profile
-   invitations
+   invitation
    entity-users
    create-entity
    widgets

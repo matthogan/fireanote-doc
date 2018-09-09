@@ -1,4 +1,4 @@
-.. _invitations:
+.. _invitation:
 
 Invitations
 ===========
