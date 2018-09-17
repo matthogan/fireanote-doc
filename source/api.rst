@@ -10,7 +10,6 @@ All calls are invoked over SSL. HTTP calls will be redirected to HTTPS
 using a 302 response status.
 
 .. _api-authorization:
-
 Authorization
 -------------
 

@@ -44,6 +44,7 @@ increased capacity, or sentiment analysis.
    console
    plans
    faq
+   troubleshooting
    privacy
    copyright
    disclaimer
