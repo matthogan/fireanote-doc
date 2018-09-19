@@ -39,3 +39,10 @@ What is the API endpoint?
 https://api.fireanote.com/api/v0.1/notification
 
 See the documentation on :ref:`api-send-notification`.
+
+Where is the response?
+----------------------
+
+The notification call has no response body, however an 
+HTTP status code of 201 will be present in the 
+:ref:`api-notification-response` header.

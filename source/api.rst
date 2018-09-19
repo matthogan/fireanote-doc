@@ -129,6 +129,7 @@ Fields
 | body           | string | 4000       | Content of the message, such as an error message, or any text including user messages and so on.                           |
 +----------------+--------+------------+----------------------------------------------------------------------------------------------------------------------------+
 
+.. _api-notification-response:
 Response
 --------
 
